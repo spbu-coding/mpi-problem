@@ -19,16 +19,16 @@ A list of `word number_of_occurrence` pairs should be printed to the standard ou
 
 [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-## Install MPI
+## Install Microsoft MPI
 
 ```powershell
-  .\script\install_mpi.ps1
+.\script\install_mpi.ps1
 ```
 
 ## Run tests
 
 ```powershell
-  .\script\test.ps1
+.\script\test.ps1
 ```
 
 
@@ -37,11 +37,11 @@ A list of `word number_of_occurrence` pairs should be printed to the standard ou
 Build project
 
 ```powershell
-  .\script\build.ps1
+.\script\build.ps1
 ```
 
 Run with MPI
 
 ```powershell
-  mpiexec.exe -n 4 .\bin\Debug\net5.0\test-dotnet-mpi.exe $path_to_input_file
+mpiexec.exe -n 4 .\bin\Debug\net5.0\mpi-problem.exe $path_to_input_file
 ```
